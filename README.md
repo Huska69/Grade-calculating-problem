@@ -29,3 +29,20 @@ Write a program in the above 5 different programming languages to translate the 
 Round off the overall scores into integers before looking up the table.  
 Note that for Java, Python, and R, it is required to read the grade standards from HW2grade.csv, while for ML and Prolog, it is allowed to give the grade standards in the program.  
 # How to compile these programs: 
+First of all I'm reminding you that I'm using Ubuntu here so install python3, swiprolog, polyml, java, Rscript on you machine. I'm using ubuntu because its very handy to install and prepare all of those programming language environments. Use some google to prepare environments on your machine. 
+1. Python, Java 
+Remember grades.py, grades.java should provide you new csv file as a output. 
+Compiling command on ubuntu: 
+- python3 grades.py 
+- javac grade.java after your class file created java grade
+2. Rscript, Polyml, Prolog
+Remember your output should be appeared on your consol. 
+Compiling command on ubuntu: 
+- Rscript grades.r 
+- poly --use mycode.sm
+- swipl -s grade.pl
+--- 
+Those command maybe written differently on different operating systems so do your research. 
+
+
+
