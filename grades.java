@@ -6,7 +6,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-public class grade {
+public class grades {
     public static void main(String[] args) {
         String csvFilePath = "HW2data.csv";
         List<String> lines = readCsvFile(csvFilePath);
@@ -26,13 +26,14 @@ public class grade {
             double finalScore = parseDouble(values[7]);
 
             double score = hw1 * 0.1 + hw2 * 0.1 + hw3 * 0.1 + midterm * 0.3 + finalScore * 0.4;
-            String grade = calculateGrade(score);
+            double roundedscore = Math.round(score);
+            String grade = calculateGrade(roundedscore);
 
-            line += "," + String.format("%.2f", score) + "," + grade;
+            line += "," + String.format("%.2f", roundedscore) + "," + grade;
             newLines.add(line);
         }
 
-        writeCsvFile("grades.csv", newLines);
+        writeCsvFile("gradesbyjava.csv", newLines);
     }
 
     private static double parseDouble(String value) {
@@ -62,26 +63,26 @@ public class grade {
         }
     }
 
-    private static String calculateGrade(double score) {
-        if (score < 50) {
+    private static String calculateGrade(double roundedscore) {
+        if (roundedscore < 50) {
             return "E";
-        } else if (score < 60) {
+        } else if (roundedscore < 60) {
             return "D";
-        } else if (score < 63) {
+        } else if (roundedscore < 63) {
             return "C-";
-        } else if (score < 67) {
+        } else if (roundedscore < 67) {
             return "C";
-        } else if (score < 70) {
+        } else if (roundedscore < 70) {
             return "C+";
-        } else if (score < 73) {
+        } else if (roundedscore < 73) {
             return "B-";
-        } else if (score < 77) {
+        } else if (roundedscore < 77) {
             return "B";
-        } else if (score < 80) {
+        } else if (roundedscore < 80) {
             return "B+";
-        } else if (score < 85) {
+        } else if (roundedscore < 85) {
             return "A-";
-        } else if (score < 90) {
+        } else if (roundedscore < 90) {
             return "A";
         } else {
             return "A+";
