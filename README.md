@@ -28,3 +28,4 @@ Score  |Grade
 Write a program in the above 5 different programming languages to translate the overall score of each student into a grade.  
 Round off the overall scores into integers before looking up the table.  
 Note that for Java, Python, and R, it is required to read the grade standards from HW2grade.csv, while for ML and Prolog, it is allowed to give the grade standards in the program.  
+#How to compile these programs: 
