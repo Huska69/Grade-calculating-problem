@@ -2,7 +2,8 @@ import pandas
 import numpy 
 
 input = pandas.read_csv("HW2data.csv")
-input['Score'] = input['HW1'] *0.1 +input ['HW2'] *0.1 +input ['HW3'] *0.1 +input ['Midterm'] *0.3 +input ['Final'] *0.4
+input['Score'] = input['HW1'] * 0.1 + input['HW2'] * 0.1 + input['HW3'] * 0.1 + input['Midterm'] * 0.3 + input['Final'] * 0.4
+input['Score'] = round(input['Score'])
 
 conditions = [
     input['Score'] < 50, 
