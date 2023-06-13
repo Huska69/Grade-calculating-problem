@@ -48,23 +48,23 @@ fun readFileContents filePath =
 
                                 val Grade = if Scores >= 0.0 andalso Scores <= 49.9 then
                                                 "E"
-                                            else if Scores >= 50.0 andalso Scores <= 59.9 then
+                                            else if Scores >= 50.00 andalso Scores <= 59.90 then
                                                 "D"
-                                            else if Scores >= 60.0 andalso Scores <= 62.9 then
+                                            else if Scores >= 60.00 andalso Scores <= 62.49 then
                                                 "C-"
-                                            else if Scores >= 63.0 andalso Scores <= 66.9 then
+                                            else if Scores >= 62.50 andalso Scores <= 66.90 then
                                                 "C"
-                                            else if Scores >= 67.0 andalso Scores <= 69.9 then
+                                            else if Scores >= 67.00 andalso Scores <= 69.90 then
                                                 "C+"
-                                            else if Scores >= 70.0 andalso Scores <= 72.9 then
+                                            else if Scores >= 70.00 andalso Scores <= 72.90 then
                                                 "B-"
-                                            else if Scores >= 73.0 andalso Scores <= 76.9 then
+                                            else if Scores >= 73.00 andalso Scores <= 76.89 then
                                                 "B"
-                                            else if Scores >= 77.0 andalso Scores <= 79.9 then
+                                            else if Scores >= 76.90 andalso Scores <= 79.90 then
                                                 "B+"
-                                            else if Scores >= 80.0 andalso Scores <= 84.9 then
+                                            else if Scores >= 80.00 andalso Scores <= 84.90 then
                                                 "A-"
-                                            else if Scores >= 85.0 andalso Scores <= 89.9 then
+                                            else if Scores >= 85.00 andalso Scores <= 89.90 then
                                                 "A"            
                                             else
                                                 "A+"            
