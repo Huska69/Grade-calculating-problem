@@ -34,13 +34,13 @@ First of all I'm reminding you that I'm using Ubuntu here so install python3, sw
 Remember grades.py, grades.java should provide you new csv file as a output. 
 Compiling command on ubuntu: 
 - python3 grades.py 
-- javac grades.java after your class file created java grade
+- javac grades.java after your class file created java grades
 2. Rscript, Polyml, Prolog
 Remember your output should be appeared on your consol. 
 Compiling command on ubuntu: 
 - Rscript grades.r 
-- poly --use mycode.sm
-- swipl -s grade.pl
+- poly --use grades.pl
+- swipl -s grades.pl
 --- 
 Those command maybe written differently on different operating systems so do your research. 
 
