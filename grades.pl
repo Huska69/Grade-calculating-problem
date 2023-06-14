@@ -5,7 +5,7 @@ main :-
  read_csv_file(File, Rows):-
  csv_read_file(File, Rows, [functor(row)]).
 
- weighted_mean([]).husl
+ weighted_mean([]).
  weighted_mean([row(_, ID, _, HW1, HW2, HW3, MIDTERM, FINAL)|REST]):-
  (
  number(FINAL) ->
