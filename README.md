@@ -34,7 +34,7 @@ First of all I'm reminding you that I'm using Ubuntu here so install python3, sw
 Remember grades.py, grades.java should provide you new csv file as a output. 
 Compiling command on ubuntu: 
 - python3 grades.py 
-- javac grade.java after your class file created java grade
+- javac grades.java after your class file created java grade
 2. Rscript, Polyml, Prolog
 Remember your output should be appeared on your consol. 
 Compiling command on ubuntu: 
