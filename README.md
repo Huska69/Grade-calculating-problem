@@ -39,7 +39,7 @@ Compiling command on ubuntu:
 Remember your output should be appeared on your consol. 
 Compiling command on ubuntu: 
 - Rscript grades.r 
-- poly --use grades.pl
+- poly --use grades.ml
 - swipl -s grades.pl
 --- 
 Those command maybe written differently on different operating systems so do your research. 
